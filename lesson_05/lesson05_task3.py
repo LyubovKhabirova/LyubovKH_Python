@@ -29,7 +29,6 @@ expected_value = '54321'
 if actual_value == expected_value:
     print('Успех! Значение совпадает.')
 else:
-    print(f'Ошибка! Ожидалось {expected_value}, получено {
-        actual_value}')
+    print(f'Ошибка! Ожидалось {expected_value}, получено {actual_value}')
 
 driver.quit()
