@@ -45,7 +45,11 @@ def test_purchase(driver, wait):
         )
         button.click()
 
-    result = WebDriverWait(driver, 45).until(
-        EC.visibility_of_element_located((By.XPATH, ".//div[text()='15']")))
+    WebDriverWait(driver, 45).until(
+        EC.text_to_be_present_in_element((
+            By.CSS_SELECTOR, ".screen"), "15"))
 
-    print(f'Результат вычислений равен: {result.text}')
+    result = driver.find_element(By.CSS_SELECTOR, ".screen").text
+    assert result == "15"
+
+    print(f'Результат вычислений равен: {result}')
