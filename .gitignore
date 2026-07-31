@@ -10,3 +10,17 @@ venv/
 
 # Скрываем системные папки VS Code
 .vscode/
+
+# Секреты и конфиги с личными данными
+.env
+*.env
+config.local.py
+secrets.py
+*.pem
+*.key
+
+# Файлы с логами и отчетами
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
