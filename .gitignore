@@ -24,3 +24,14 @@ secrets.py
 .pytest_cache/
 .coverage
 htmlcov/
+
+# allure отчеты
+allure-result/
+allure-report/
+allure-results/
+final-report/
+results/
+
+# Файлы запуска
+run.bat
+*.bat
